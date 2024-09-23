@@ -30,6 +30,9 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/mydb', {
 // Routes
 // app.post('/register', registerUser);
 // app.post('/login', loginUser);
+app.get('/', (req, res) => {
+  res.send('Welcome to the backend API');
+});
 app.use('/api/auth', authRoutes);
 app.use('/api', resetRoutes);
 app.use('/api', contactRoutes);
