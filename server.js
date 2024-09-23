@@ -11,7 +11,7 @@ const contactRoutes = require('./routes/contactRoutes');
 
 const app = express();
 app.use(cors({
-  origin: 'https://website-frontendd.vercel.app', // Replace with the actual URL of your frontend
+  origin: 'https://frontend-psi-navy.vercel.app', // Replace with the actual URL of your frontend
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
 }));
