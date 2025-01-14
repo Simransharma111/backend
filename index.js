@@ -12,7 +12,7 @@ const app = express();
 
 // Configure CORS
 app.use(cors({
-  origin: 'https://frontend-git-master-simran-sharmas-projects-2859e77b.vercel.app', // Frontend URL
+  origin: 'https://frontend-psi-navy.vercel.app/', // Frontend URL
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
 }));
