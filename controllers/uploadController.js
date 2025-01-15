@@ -58,8 +58,6 @@ exports.createUploadDetail = async (req, res) => {
  
 
   // Retrieve user uploads based on userId or email
-// Retrieve user uploads based on userId or email
-// Retrieve user uploads based on userId or email
 exports.getUserUploads = async (req, res) => {
   const { userId, email } = req.query;
 
