@@ -6,7 +6,7 @@ const authMiddleware = require('../middlewares/authMiddleware');
 const uploadMiddleware = require('../middlewares/uploadMiddleware');
 
 // Handle form submission and image upload
-router.post('/', authMiddleware, uploadMiddleware, uploadController.createUploadDetail);
+router.post('/send', authMiddleware, uploadMiddleware, uploadController.createUploadDetail);
 
 // Get all uploads
 router.get('/', uploadController.handleall);
