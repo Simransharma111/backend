@@ -12,10 +12,14 @@ const app = express();
 
 // Configure CORS
 app.use(cors({
-  origin: 'https://frontend-psi-navy.vercel.app', // Frontend URL
+  origin: [
+    'https://frontend-psi-navy.vercel.app',
+    'https://frontend-simran-sharmas-projects-2859e77b.vercel.app' // Add the second frontend URL here
+  ],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
 }));
+
 
 app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
